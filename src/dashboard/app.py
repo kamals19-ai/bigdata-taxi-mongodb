@@ -1,3 +1,8 @@
+import sys
+from pathlib import Path
+
+sys.path.append(str(Path(__file__).resolve().parents[2]))
+
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
@@ -7,6 +12,7 @@ from src.utils.db import get_collection
 st.set_page_config(page_title="Taxi Gold Dashboard", layout="wide")
 
 st.title("NYC Taxi Dashboard (Gold Layer: agg_trips)")
+st.write("Dashboard started ✅")
 st.caption("All charts are generated from MongoDB Atlas aggregated collection: agg_trips")
 
 # Load aggregated data
