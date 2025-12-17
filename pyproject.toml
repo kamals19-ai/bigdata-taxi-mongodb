@@ -1,0 +1,30 @@
+[project]
+name = "bigdata-taxi-mongodb"
+version = "0.1.0"
+description = "NYC Taxi Big Data pipeline using MongoDB Atlas and Python"
+requires-python = ">=3.11"
+dependencies = [
+  "polars",
+  "pymongo",
+  "pydantic>=2",
+  "python-dotenv",
+  "streamlit",
+  "loguru",
+  "mypy>=1.19.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "mypy",
+]
+
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
