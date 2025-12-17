@@ -57,6 +57,7 @@ plt.xlabel("Month")
 plt.ylabel("Trip Count")
 plt.title("Trips by Month")
 st.pyplot(fig1)
+st.markdown("**Insight:** Trip volume increases significantly from May to June, indicating strong seasonal demand growth as summer begins in New York City.")
 
 # Visualization 2: Revenue by vendor
 st.subheader("2) Total Revenue by Vendor")
@@ -66,6 +67,7 @@ plt.xlabel("VendorID")
 plt.ylabel("Total Revenue")
 plt.title("Revenue by Vendor")
 st.pyplot(fig2)
+st.markdown("**Insight:** Vendor 2 generates the highest total revenue, suggesting a dominant market share or higher trip volume compared to other vendors.")
 
 # Visualization 3: Average fare trend
 st.subheader("3) Average Fare by Month")
@@ -75,5 +77,6 @@ plt.xlabel("Month")
 plt.ylabel("Average Fare")
 plt.title("Average Fare Trend")
 st.pyplot(fig3)
+st.markdown("**Insight:** The slight decrease in average fare from May to June suggests increased ride availability or shorter trip distances despite higher overall demand.")
 
 st.success("Dashboard loaded successfully from MongoDB.")
