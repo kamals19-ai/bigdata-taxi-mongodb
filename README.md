@@ -1,13 +1,4 @@
-## Architecture
 
-This project implements a three-layer Big Data pipeline using MongoDB Atlas:
-Raw data is ingested from NYC Taxi parquet files, cleaned and validated using
-Pydantic models, aggregated into a gold layer, and visualized through a dashboard.
-
-📄 [Architecture Diagram](docs/architecture.md)
-
-
-```md
 ## Overview
 
 This project implements an **end-to-end Big Data pipeline** using **MongoDB Atlas** and **Python** to process, aggregate, and visualize NYC Taxi trip data.  
@@ -18,14 +9,10 @@ The pipeline follows a **Medallion Architecture (Bronze → Silver → Gold)** a
 ## Architecture
 
 This project implements a three-layer Big Data pipeline using MongoDB Atlas:
+Raw data is ingested from NYC Taxi parquet files, cleaned and validated using
+Pydantic models, aggregated into a gold layer, and visualized through a dashboard.
 
-- Raw NYC Taxi data is ingested from Parquet files
-- Data is cleaned and validated using Pydantic models
-- Business-level aggregates are stored in a Gold layer
-- Insights are visualized through a Streamlit dashboard
-
- **Architecture Diagram:**  
-`docs/architecture.png`
+[Architecture Diagram](docs/architecture.md)
 
 ---
 
@@ -123,8 +110,7 @@ uv run streamlit run src/dashboard/app.py
 ```
 
 ### Live Dashboard
-*(Add your Streamlit Cloud URL here)*
-
+https://bigdata-taxi-app-ptznpmxbnhlwgd52f74y3j.streamlit.app/#nyc-taxi-dashboard-gold-layer-agg-trips 
 ---
 
 ## Key Insights
@@ -164,6 +150,5 @@ uv run streamlit run src/dashboard/app.py
 ✅ Aggregation Complete  
 ✅ Dashboard Deployed
 
-```
 
 
