@@ -5,6 +5,16 @@ This project implements an **end-to-end Big Data pipeline** using **MongoDB Atla
 The pipeline follows a **Medallion Architecture (Bronze → Silver → Gold)** and culminates in an interactive **Streamlit dashboard** backed directly by MongoDB (no flat files).
 
 ---
+## Data Source
+
+This project uses the official **NYC Taxi & Limousine Commission (TLC) Trip Record Data**, provided in **Parquet** format.
+
+**Source:** NYC Open Data (TLC)  
+🔗 https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+
+The dataset includes detailed trip-level records such as pickup and drop-off timestamps, locations, trip distance, fare amounts, payment types, and vendor information.  
+Monthly Parquet files are publicly available and are commonly used for large-scale analytics and big-data workflows.
+---
 
 ## Architecture
 
