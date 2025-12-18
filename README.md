@@ -6,14 +6,6 @@ Pydantic models, aggregated into a gold layer, and visualized through a dashboar
 
 📄 [Architecture Diagram](docs/architecture.md)
 
-GOT IT — sorry about that 😭
-You want **ONE clean Markdown block** you can **paste directly into the GitHub web README editor**, **without touching terminal/Bash**.
-
-Below is **EXACTLY what to paste**, nothing extra.
-
----
-
-## ✅ COPY-PASTE THIS DIRECTLY INTO `README.md` ON GITHUB (WEB)
 
 ```md
 ## Overview
