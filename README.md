@@ -63,6 +63,11 @@ bigdata-taxi-mongodb/
 └── README.md
 
 ```
+## Testing
+
+Uses pytest with 3 tests covering DB connection, cleaning, and aggregation.
+
+Tests are located in /tests and can be run with uv run pytest.
 
 ---
 
